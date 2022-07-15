@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1104px) {
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .left_section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 972px) {
+    .hamburger {
+        display: block;
+        z-index: 200;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1) {
+        transform: translateY(8px rotate(45deg));
+    }
+    .hamburger.active.bar:nth-child(3) {
+        transform: translateY(-8px rotate(-45deg));
+    }
+    .nav_links .nav_menu .nav_link {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #f58120;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav_links ul li {
+        margin: 16px 0;
+    }
+
+    .nav_links .nav_menu .nav_link .active {
+        left: 0;
+    }
+    .class_days ul {
+        display: grid;
+        /* flex-wrap: wrap; */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        /* text-align: center; */
+        margin-top: 3rem;
+    }
+    .class_per_week {
+        display: grid;
+    }
+    .Number_of_months {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+    .number_options ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* align-items: center; */
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .class_days ul li:nth-child(n) {
+        height: 2rem;
+        width: 2rem;
+        align-items: center;
+    }
+
+    .number_options ul li:nth-child(n) {
+        height: 2rem;
+        width: 2rem;
+        align-items: center;
+    }
+}
